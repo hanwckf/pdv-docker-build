@@ -8,7 +8,7 @@ RUN if test -n "$APK_MIRROR_URL"; then \
 	/etc/apk/repositories; fi
 
 RUN apk update && \
-	apk add make gcc g++ cpio curl wget nano xxd \
+	apk add make gcc g++ cpio curl wget nano xxd kmod \
 		pkgconfig rpcgen fakeroot ncurses bash patch \
 		bsd-compat-headers python2 python3 zlib-dev \
 		automake gettext gettext-dev autoconf bison \
